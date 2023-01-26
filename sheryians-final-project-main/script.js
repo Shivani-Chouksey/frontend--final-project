@@ -199,82 +199,85 @@ function timelinetwo(){
     ease:Power1
     })
 }
-function timelinethree(){
-    document.querySelector("#side-circle-one").addEventListener("mouseover",function(){
-        document.querySelector("#after-second").style.backgroundColor ="#723c4b";
-    })
-    document.querySelector("#side-circle-one").addEventListener("mouseleave",function(){
-        document.querySelector("#after-second").style.backgroundColor ="white";
-    })
-    document.querySelector("#side-circle-two").addEventListener("mouseover",function(){
-        document.querySelector("#after-second").style.backgroundColor ="lightblue";
-    })
-    document.querySelector("#side-circle-two").addEventListener("mouseleave",function(){
-        document.querySelector("#after-second").style.backgroundColor ="white";
-    })
-    document.querySelector(".down-circle").addEventListener("mouseover",function(){
-        document.querySelector("#after-second").style.backgroundColor =" rgb(119, 87, 148)";
-    })
-    document.querySelector(".down-circle").addEventListener("mouseleave",function(){
-        document.querySelector("#after-second").style.backgroundColor ="white";
-    })
+// function timelinethree(){
+//     document.querySelector("#side-circle-one").addEventListener("mouseover",function(){
+//         document.querySelector("#after-second").style.backgroundColor ="#723c4b";
+//     })
+//     document.querySelector("#side-circle-one").addEventListener("mouseleave",function(){
+//         document.querySelector("#after-second").style.backgroundColor ="white";
+//     })
+//     document.querySelector("#side-circle-two").addEventListener("mouseover",function(){
+//         document.querySelector("#after-second").style.backgroundColor ="lightblue";
+//     })
+//     document.querySelector("#side-circle-two").addEventListener("mouseleave",function(){
+//         document.querySelector("#after-second").style.backgroundColor ="white";
+//     })
+//     document.querySelector(".down-circle").addEventListener("mouseover",function(){
+//         document.querySelector("#after-second").style.backgroundColor =" rgb(119, 87, 148)";
+//     })
+//     document.querySelector(".down-circle").addEventListener("mouseleave",function(){
+//         document.querySelector("#after-second").style.backgroundColor ="white";
+//     })
     
-    const tl3=gsap.timeline({
-        scrollTrigger:{
-            scroll:"#body",
-            trigger:"#after-second",
-            // markers:true,
-            start:"top top",
-            scrub:true,
-            pin:true,
-            // pinSpacing:false,
-            end: "+=" + (window.innerHeight * 4)
-        },
-    })
-    tl3.to("#soverlay",{
-        y:-2600,
-        ease:Power1
+//     const tl3=gsap.timeline({
+//         scrollTrigger:{
+//             scroll:"#body",
+//             trigger:"#after-second",
+//             // markers:true,
+//             start:"top top",
+//             scrub:true,
+//             pin:true,
+//             // pinSpacing:false,
+//             end: "+=" + (window.innerHeight * 4)
+//         },
+//     })
+//     tl3.to("#soverlay",{
+//         y:-2600,
+//         ease:Power1
     
-    },"a")
+//     },"a")
     
-    tl3.to("#wheel",{
-       rotate:"360deg",
-        ease:Power1
+//     tl3.to("#wheel",{
+//        rotate:"360deg",
+//         ease:Power1
     
-    },"a")
-    tl3.to("#scroll-h1",{
-        x:400,
-        ease:Power1,
-        // duration:6
-    },"a")
-    tl3.to("#color-tringle",{
-        right:"-100%",
-        // ease:Power1,
-        delay:.10,
-        duration:.1
-    },"a")
-    tl3.from(".youth>span",{
-        x:-400,
-        ease:Power1,
-        delay:-.1
+//     },"a")
+//     tl3.to("#scroll-h1",{
+//         x:400,
+//         ease:Power1,
+//         // duration:6
+//     },"a")
+//     tl3.to("#color-tringle",{
+//         right:"-100%",
+//         // ease:Power1,
+//         delay:.10,
+//         duration:.1
+//     },"a")
+//     tl3.from(".youth>span",{
+//         x:-400,
+//         ease:Power1,
+//         delay:-.1
     
-    },"a")
-    tl3.to("#span-two",{
-        right:"-10%",
-        ease:Power1,
-        delay:-.1
-    },"a")
-    tl3.to("#down-pinkflar-txt>h1",{
-        x:-400,
-        ease:Power1,
-        duration:1
-        // delay:-.1
-    },"a")
+//     },"a")
+//     tl3.to("#span-two",{
+//         right:"-10%",
+//         ease:Power1,
+//         delay:-.1
+//     },"a")
+//     tl3.to("#down-pinkflar-txt>h1",{
+//         x:-400,
+//         ease:Power1,
+//         duration:1
+//         // delay:-.1
+//     },"a")
     
-}
-timelineone();
-timelinetwo();
-timelinethree();
+// }
+window.addEventListener("DOMContentLoaded",function(){
+    timelineone();
+    timelinetwo();
+})
+
+// timelinethree();
 // gsap.to("#smcone",{
 //     rigth:"8%",
 //     duration:2,
