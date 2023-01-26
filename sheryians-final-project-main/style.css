@@ -440,6 +440,7 @@ color: #ac7786;
 #soverlay{
     width: 100vw;
     min-height: 100vh;
+    
     position: absolute;
     /* background-color: black; */
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
@@ -574,23 +575,28 @@ top: 79%;
     color: #ac7786;
     /* scale: .5; */
 }
-/* #tringal-line{
-    position: absolute;
+#color-tringle{
     width: 100vw;
-    height: 60vh;
-    background-color: #723c4b;
-    top: 200%;
-} */
+    height: 70vh;
+    background-color: #ffff;
+    position: absolute;
+    top: 201%;
+    z-index: 99;
+    right: -15%;
+}
+
 .imgtringle{
     width: 100%;
     position: absolute;
-    top: 200%;
-    left: 0.2%;
+    top: 205%;
+    left: -0.9%;
+    z-index: 999;
 }
 .youth {
+    z-index: 999;
     position: absolute;
-    color: #ac7786;
-    top: 265%;
+    color: rgba(213, 167, 180, 1);
+    top: 268%;
     font-size: 5vw;font-weight: 600;
     text-align: center;
     left: 50%;
@@ -604,7 +610,7 @@ top: 79%;
 }
 .down-circle{
     position: absolute;
-    top: 300%;
+    top: 309%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -681,6 +687,9 @@ top: 79%;
         width: 206vw;
         height: 206vw;
     }
+    #after-second{
+        overflow: hidden;
+    }
     #wistful{
         font-size: 30px;
     }
@@ -704,6 +713,75 @@ top: 79%;
         font-size: 300px;
         top: 72%;
 
+    }
+    .tone{
+        left: 19%;
+    top: 46%;
+    }
+    .heading2{
+        top: 46%;
+    left: 30%;
+    font-size: 4vw;
+    }
+    #wheel{
+        top: 4%;
+    left: 50%;
+    transform: translateX(-50%) scale(.25)
+    }
+    #side-circle-one{
+        right: -10%;
+    top: 44%;
+    scale: .4;
+    }
+    .small-circle{
+        width: 8vw;
+        height:8vw;
+        right: 6%;
+    top: 44%;
+    }
+    #side-circle-two{
+        left: -15%;
+        top: 106%;
+        scale: .5;
+    }
+    #text-scroll{
+        top: 134%;
+    }
+    .imgliness{
+        top: 146%;
+        left: -8%;
+    }
+    #color-tringle{
+        top: 150%;
+        height: 19vh;
+    }
+    .down-circle{
+        top: 184%;
+        scale: .5;
+    }
+    #down-img-one {
+        top: 212%;
+        left: -3%;
+        scale: .3;
+    }
+    #down-img-two{
+        top: 229%;
+        left: 13%;
+        scale: .5;
+    }
+    #down-img-three{
+    scale: .5;
+    top: 294%;
+    right: -1%;
+    }
+    #down-pinkflar-txt{
+        top: 258%;
+    }
+    #down-pinkflar-txt>h1{
+        font-size: 139px;
+    }
+    #smctwo{
+        right: 12%;
     }
     #heading-one{
 letter-spacing: -1.8px;
